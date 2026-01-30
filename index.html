@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jenkins HTML Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            color: #333;
+            padding: 25px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        footer {
+            background: rgba(0,0,0,0.4);
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            background: #667eea;
+            border: none;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #5a67d8;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 Jenkins HTML Demo</h1>
+    <p>Static HTML Page Published via Jenkins</p>
+</header>
+
+<section>
+    <div class="card">
+        <h2>Build Status</h2>
+        <p>This HTML file is generated from GitHub and published by Jenkins.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="msg"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 DevOps Assignment | Jenkins</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("msg").innerText =
+            "✅ Jenkins build executed successfully!";
+    }
+</script>
+
+</body>
+</html>
